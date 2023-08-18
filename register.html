@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <title>Register Səhifəsi</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Qeydiyyat</h1>
+        <form action="submit.html" method="#">
+            <label for="username">İstifadəçı adı :</label>
+            <input type="text" id="soyad" name="soyad" required placeholder="İstifadəçi adınızı daxil edin">
+
+            <label for="reg_password">Parol:</label>
+            <input type="password" id="reg_password" name="reg_password" required placeholder="Şifrənizi daxil edin">
+            
+            <label for="reg_password2">Parol təkrar daxil edin:</label>
+            <input type="password" id="reg_password2" name="reg_password2" required placeholder="Şifrənizi təkrar daxil edin" >
+
+            <label for="ad">Ad :</label>
+            <input type="text" id="ad" name="ad" required placeholder="Adınızı daxil edin">
+            
+            <label for="soyad">Soyad :</label>
+            <input type="text" id="soyad" name="soyad" required placeholder="Soyadınızı daxil edin">
+
+            <label for="e-mail">E-mail :</label>
+            <input type="e-mail" id="e-mail" name="e-mail" required placeholder="E-mail daxil edin">
+
+            <label for="radio">Cinsiyyət :</label>
+            <div class="gender-options" style="text-align: center;">
+                <label>
+                    <input type="radio" name="gender" value="male" required> Kişi
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" required> Qadın
+                </label>
+            </div>
+            <label for="birth_city">Doğulduğunuz şəhər:</label>
+            <select style="height: 130%;" id="birth_city" name="birth_city" required>
+                <option value="" disabled selected>Şəhər seçin</option>
+                <option value="baku">Bakı</option>
+                <option value="samqayit">Sumqayıt</option>
+                <option value="quba">Quba</option>
+                <option value="qusar">Qusar</option>
+                <option value="zaqatala">Zaqatala</option>
+                <option value="gence">Gəncə</option>                
+            </select>
+            
+            <label for="dogum_tarixi">Doğum Tarixi :</label>
+            <input type="date" id="dogum_tarixi" name="dogum_tarixi" required>
+            
+            <button type="submit">Təsdiqlə</button>
+        </form>
+    </div>
+</body>
+</html>
