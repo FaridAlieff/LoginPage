@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <title>Register Səhifəsi</title>
+</head>
+<body>
+    <div class="container2">
+        <h1>Qeydiyyat</h1>
+        <form action="submit.html" method="#">
+            <div>
+                <i class="icon fas fa-user"></i>
+                <input type="text" placeholder="Ad" required>
+              </div>
+              <div>
+                <i class="icon fas fa-envelope"></i>
+                <input type="email" placeholder="E-mail" required>
+              </div>
+              <div>
+                <i class="icon fas fa-phone"></i>
+                <input type="tel" placeholder="Telefon" required>
+              </div>
+              <div>
+                <i class="icon fas fa-lock"></i>
+                <input type="password" placeholder="Parol" required>
+              </div>
+
+            <label for="radio">Cinsiyyət :</label>
+            <div class="gender-options" style="text-align: center;">
+                <label>
+                    <input type="radio" name="gender" value="male" required> Kişi
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" required> Qadın
+                </label>
+            </div>
+            <label for="birth_city">Doğulduğunuz şəhər:</label>
+            <select style="height: 130%;" id="birth_city" name="birth_city" required>
+                <option value="" disabled selected>Şəhər seçin</option>
+                <option value="baku">Bakı</option>
+                <option value="samqayit">Sumqayıt</option>
+                <option value="quba">Quba</option>
+                <option value="qusar">Qusar</option>
+                <option value="zaqatala">Zaqatala</option>
+                <option value="gence">Gəncə</option>                
+            </select>
+            
+            <label for="dogum_tarixi">Doğum Tarixi :</label>
+            <input type="date" id="dogum_tarixi" name="dogum_tarixi" required>
+            
+            <button type="submit">Təsdiqlə</button>
+        </form>
+    </div>
+</body>
+</html>
